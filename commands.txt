@@ -30,13 +30,44 @@ git checkout -b service
 touch service.yaml
 touch raedme_3.md
 
+הרצת האפליקציה
+kubectl apply -f pod.yaml
+kubectl apply -f service.yaml
+
+בדיקה
+kubectl get pods
+kubectl get services
+
+
+git add Screenshot.png   raedme_5.md
+git commit -m "Implement Screenshot.png"
+git push origin screenshot
+
+git checkout pod
+git add pod.yaml raedme_2.md
+git commit -m "Implement pod.yaml"
+git push origin pod
+
+ git checkout service
+git add raedme_3.md service.yaml
+git commit -m "Implement service.yaml"
+git push origin service
+
+
 git checkout -b commands
 touch commands.txt
 touch raedme_4.md
+git add commands.txt readme_4.md
+git commit -m "Implement commands.txt"
+git push origin commands
+
 
 git checkout -b screenshot
 הוספת התמונה
 touch raedme_5.md
+git commit -m "Implement screenshot"
+git push origin screenshot
+
 
 
 
