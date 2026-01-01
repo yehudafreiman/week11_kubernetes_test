@@ -38,6 +38,8 @@ kubectl apply -f service.yaml
 kubectl get pods
 kubectl get services
 
+minikube service api-service --url
+curl <URL>
 
 git add Screenshot.png   raedme_5.md
 git commit -m "Implement Screenshot.png"
