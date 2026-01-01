@@ -1,0 +1,47 @@
+Git clone https://github.com/yehudafreiman/week11_kubernetes_test.git
+
+הכנת הסביבה:
+minikube start
+minikube status
+
+הרצה ידנית:
+[cd streamlit_minikube_app
+pip install -r requirements.txt
+streamlit run main.py]
+
+בניית תמונת דוקר
+git checkout -b dockerfile
+הורדת הקבצים מגיטהאב
+docker build -t yehudafreiman/streamlit:v1 .
+docker run -p 8090:8080 yehudafreiman/streamlit:v1
+docker ps
+docker push yehudafreiman/streamlit:v
+git add .
+git commit -m "Implement dockerfile"
+git push origin dockerfile
+
+פריסה לקוברנטיס
+
+git checkout -b pod
+touch pod.yaml
+touch raedme_2.md
+
+git checkout -b service
+touch service.yaml
+touch raedme_3.md
+
+git checkout -b commands
+touch commands.txt
+touch raedme_4.md
+
+git checkout -b screenshot
+הוספת התמונה
+touch raedme_5.md
+
+
+
+
+
+
+
+
